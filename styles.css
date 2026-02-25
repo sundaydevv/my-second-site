@@ -3,16 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+    body {
+        border: 10px solid red !important;
+    }
+
+
+/*.background-img {*/
+/*    background-image: url('bg.jpg');*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    background-position: top center;*/
+/*    min-height: 1900px;*/
+/*    padding-top: 1px;*/
+/*}*/
 
 .background-img {
-    background-image: url('bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    min-height: 1900px;
-    padding-top: 1px;
+    background-image: url("bg.jpg") !important;
+    background-color: red !important; /* Если картинка не подгрузится, блок ДОЛЖЕН стать красным */
+    min-height: 500px !important;
+    width: 100%;
+    display: block;
 }
-
 /*шапка*/
 
 header {
@@ -609,7 +620,7 @@ footer {
 
 .footer__p1 {
     font-size: 50px;
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", Times, serif;
     letter-spacing: 2px;
 }
 
