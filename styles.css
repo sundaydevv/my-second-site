@@ -5,12 +5,18 @@
 }
 
 .background-img {
+    background-color: #0B1D26;
     background-image: url('bg.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
     min-height: 1900px;
     padding-top: 1px;
+}
+@media (max-width: 1024px) {
+    .background-img {
+        background-size: cover;
+    }
 }
 .for-bg {
     background: #0B1D26;
